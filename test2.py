@@ -41,3 +41,13 @@
 #
 # print("Результат:", result)
 
+
+import datetime
+
+# Получить текущую дату
+current_date = datetime.date.today()
+
+# Извлечь номер месяца из текущей даты (1 - январь, 2 - февраль, и так далее)
+month_number = current_date.month
+
+print("Текущий месяц:", month_number)
