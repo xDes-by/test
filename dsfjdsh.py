@@ -9,17 +9,13 @@
 #     index = (index + k) % len(elements)
 #
 # print("Последний оставшийся элемент:", elements[0])
-shopping_list=[]
-shopping_list.append("яблоко")
-shopping_list.append("молоко")
-shopping_list.append("молоко")
-shopping_list.append("хлеб")
-shopping_list.append("яйца")
-shopping_list.append("сок")
-for d in shopping_list:
-    print(d)
-shopping_list.remove("молоко")
-shopping_list[shopping_list.index("яблоко")]= 'банан'
-print(shopping_list)
-print(len(shopping_list))
-input()
+
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
