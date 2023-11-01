@@ -1,21 +1,20 @@
-# count = int(input("Ведите кол-во элементов в списке: "))
-# k = int(input("Исключаем каждый: ")) - 1
+# N = int(input("Введите число N: "))
+# k = int(input("Введите число k: ")) - 1
 #
-# elements = list(range(1, count + 1))
+# array = list(range(1, N + 1))
+# index = 0
+# while len(array) > 1:
+#     index = (index + k) % len(array)
+#     del array[index]
 #
-# index = k
-# while len(elements) > 1:
-#     del elements[index]
-#     index = (index + k) % len(elements)
-#
-# print("Последний оставшийся элемент:", elements[0])
+# print("Last:", array)
 
-for i in range(1, 101):
-    if i % 3 == 0 and i % 5 == 0:
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
         print("FizzBuzz")
-    elif i % 3 == 0:
+    elif num % 3 == 0:
         print("Fizz")
-    elif i % 5 == 0:
+    elif num % 5 == 0:
         print("Buzz")
     else:
-        print(i)
+        print(num)
