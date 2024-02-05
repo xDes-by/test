@@ -1,26 +1,23 @@
-# N = int(input("Введите число N: "))
-# k = int(input("Введите число k: ")) - 1
-#
-# array = list(range(1, N + 1))
-# index = 0
-# while len(array) > 1:
-#     index = (index + k) % len(array)
-#     del array[index]
-#
-# print("Last:", array)
+def process_numbers(line):
+    numbers = map(int, line.split())
+    doubled_numbers = map(lambda x: x * 2, numbers)
+    return doubled_numbers
 
-people = int(input('количество человек:'))
-c = int(input('число в считалке:'))
-print(' каждый выбывает', c, 'человек')
-a = [i for i in range(1, people+1)]
-start = 0
-while len (a)>1:
-    print('людей:', a)
-    print('начало счета', a[start])
-    delete = (start+c-1)%len(a)
-    if a[delete] == a[-1]:
-        start = 0
-    else:
-        start = delete
-    print('номер человека', a.pop(delete))
-    print('остался', a[0])
+
+def main():
+    with open('data.txt', 'r') as input_file:
+        lines = input_file.readlines()
+
+    processed_data = []
+    for line in lines:
+        doubled_numbers = process_numbers(line)
+        processed_data.extend(doubled_numbers)
+
+    average_value = sum(processed_data) / len(processed_data)
+
+    with open('output.txt', 'w') as output_file:
+        output_file.write(f'Average value: {average_value}')
+
+
+if __name__ == "__main__":
+    main()
