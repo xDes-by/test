@@ -1,2 +1,0 @@
-A is a powerful and versatile programming language.
-Java and C++ are also popular programming languages.

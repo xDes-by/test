@@ -1,7 +1,0 @@
-есть файл в котором есть вот такие строки
-viluciheare:Qx1tCAQD:lidovabalbo@gmail.com:7mXh6cdxr::https://steamcommunity.com/profiles/7656119949671246
-sorptaltero:lOiEKY1T:niperdbowfmaso@gmail.com:buVQSRNNIxQHh::https://steamcommunity.com/profiles/7656119949678137
-
-необходимо написать программу которая запишит в новый файл с такими строками
-viluciheare:Qx1tCAQD
-sorptaltero:lOiEKY1T

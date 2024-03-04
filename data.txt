@@ -1,4 +1,0 @@
-Hello, welcome to the world of Python programming.
-Angular is a powerful and versatile programming language.
-Learning Python is fun and rewarding.
-Java and C++ are also popular programming languages.
